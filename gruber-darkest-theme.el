@@ -47,8 +47,6 @@
       (gruber-darkest-black     "#000000")
       (gruber-darkest-bg-1      "#101010")
       (gruber-darkest-bg        "#181818")
-      (gruber-darkest-bg+1      "#101010")
-      (gruber-darkest-bg+2      "#101010")
       (gruber-darkest-bg+3      "#484848")
       (gruber-darkest-bg+4      "#52494e")
       (gruber-darkest-red-1     "#c73c3f")
@@ -91,13 +89,13 @@
 
    ;; Basic Coloring (or Uncategorized)
    `(border ((t ,(list :background gruber-darkest-bg-1
-                       :foreground gruber-darkest-bg+2))))
+                       :foreground gruber-darkest-bg-1))))
    `(cursor ((t (:background ,gruber-darkest-fg+1))))
    `(default ((t ,(list :foreground gruber-darkest-fg
                         :background gruber-darkest-bg))))
    `(fringe ((t ,(list :background nil
-                       :foreground gruber-darkest-bg+2))))
-   `(vertical-border ((t ,(list :foreground gruber-darkest-bg+2))))
+                       :foreground gruber-darkest-bg-1))))
+   `(vertical-border ((t ,(list :foreground gruber-darkest-bg-1))))
    `(link ((t (:foreground ,gruber-darkest-niagara :underline t))))
    `(link-visited ((t (:foreground ,gruber-darkest-wisteria :underline t))))
    `(match ((t (:background ,gruber-darkest-bg+4))))
@@ -225,7 +223,7 @@
       (t (:foreground ,gruber-darkest-yellow :weight bold :underline t))))
 
    ;; Helm
-   `(helm-candidate-number ((t ,(list :background gruber-darkest-bg+2
+   `(helm-candidate-number ((t ,(list :background gruber-darkest-bg-1
                                       :foreground gruber-darkest-yellow
                                       :bold t))))
    `(helm-ff-directory ((t ,(list :foreground gruber-darkest-niagara
@@ -236,8 +234,8 @@
    `(helm-ff-invalid-symlink ((t ,(list :foreground gruber-darkest-bg
                                         :background gruber-darkest-red))))
    `(helm-ff-symlink ((t (:foreground ,gruber-darkest-yellow :bold t))))
-   `(helm-selection-line ((t (:background ,gruber-darkest-bg+1))))
-   `(helm-selection ((t (:background ,gruber-darkest-bg+1 :underline nil))))
+   `(helm-selection-line ((t (:background ,gruber-darkest-bg-1))))
+   `(helm-selection ((t (:background ,gruber-darkest-bg-1 :underline nil))))
    `(helm-source-header ((t ,(list :foreground gruber-darkest-yellow
                                    :background gruber-darkest-bg
                                    :box (list :line-width -1
@@ -263,8 +261,8 @@
    `(jabber-activity-personal-face ((t (:foreground ,gruber-darkest-yellow :bold t))))
 
    ;; Line Highlighting
-   `(highlight ((t (:background ,gruber-darkest-bg+1 :foreground nil))))
-   `(highlight-current-line-face ((t ,(list :background gruber-darkest-bg+1
+   `(highlight ((t (:background ,gruber-darkest-bg-1 :foreground nil))))
+   `(highlight-current-line-face ((t ,(list :background gruber-darkest-bg-1
                                             :foreground nil))))
 
    ;; line numbers
@@ -277,22 +275,22 @@
 
    ;; Magit
    `(magit-branch ((t (:foreground ,gruber-darkest-niagara))))
-   `(magit-diff-hunk-header ((t (:background ,gruber-darkest-bg+2))))
+   `(magit-diff-hunk-header ((t (:background ,gruber-darkest-bg-1))))
    `(magit-diff-file-header ((t (:background ,gruber-darkest-bg+4))))
    `(magit-log-sha1 ((t (:foreground ,gruber-darkest-red+1))))
    `(magit-log-author ((t (:foreground ,gruber-darkest-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-darkest-green
-                                            :background gruber-darkest-bg+1))))
+                                            :background gruber-darkest-bg-1))))
    `(magit-log-head-label-local ((t ,(list :foreground gruber-darkest-niagara
-                                           :background gruber-darkest-bg+1))))
+                                           :background gruber-darkest-bg-1))))
    `(magit-log-head-label-tags ((t ,(list :foreground gruber-darkest-yellow
-                                          :background gruber-darkest-bg+1))))
+                                          :background gruber-darkest-bg-1))))
    `(magit-log-head-label-head ((t ,(list :foreground gruber-darkest-fg
-                                          :background gruber-darkest-bg+1))))
-   `(magit-item-highlight ((t (:background ,gruber-darkest-bg+1))))
+                                          :background gruber-darkest-bg-1))))
+   `(magit-item-highlight ((t (:background ,gruber-darkest-bg-1))))
    `(magit-tag ((t ,(list :foreground gruber-darkest-yellow
                           :background gruber-darkest-bg))))
-   `(magit-blame-heading ((t ,(list :background gruber-darkest-bg+1
+   `(magit-blame-heading ((t ,(list :background gruber-darkest-bg-1
                                     :foreground gruber-darkest-fg))))
 
    ;; Message
@@ -343,7 +341,7 @@
    `(speedbar-directory-face ((t ,(list :foreground gruber-darkest-niagara
                                         :weight 'bold))))
    `(speedbar-file-face ((t (:foreground ,gruber-darkest-fg))))
-   `(speedbar-highlight-face ((t (:background ,gruber-darkest-bg+1))))
+   `(speedbar-highlight-face ((t (:background ,gruber-darkest-bg-1))))
    `(speedbar-selected-face ((t (:foreground ,gruber-darkest-red))))
    `(speedbar-tag-face ((t (:foreground ,gruber-darkest-yellow))))
 
@@ -352,15 +350,15 @@
 
    ;; Whitespace
    `(whitespace-space ((t ,(list :background gruber-darkest-bg
-                                 :foreground gruber-darkest-bg+1))))
+                                 :foreground gruber-darkest-bg-1))))
    `(whitespace-tab ((t ,(list :background gruber-darkest-bg
-                               :foreground gruber-darkest-bg+1))))
+                               :foreground gruber-darkest-bg-1))))
    `(whitespace-hspace ((t ,(list :background gruber-darkest-bg
-                                  :foreground gruber-darkest-bg+2))))
-   `(whitespace-line ((t ,(list :background gruber-darkest-bg+2
+                                  :foreground gruber-darkest-bg-1))))
+   `(whitespace-line ((t ,(list :background gruber-darkest-bg-1
                                 :foreground gruber-darkest-red+1))))
    `(whitespace-newline ((t ,(list :background gruber-darkest-bg
-                                   :foreground gruber-darkest-bg+2))))
+                                   :foreground gruber-darkest-bg-1))))
    `(whitespace-trailing ((t ,(list :background gruber-darkest-red
                                     :foreground gruber-darkest-red))))
    `(whitespace-empty ((t ,(list :background gruber-darkest-yellow
@@ -373,7 +371,7 @@
                                             :foreground gruber-darkest-brown))))
 
    ;; tab-bar
-   `(tab-bar ((t (:background ,gruber-darkest-bg+1 :foreground ,gruber-darkest-bg+4))))
+   `(tab-bar ((t (:background ,gruber-darkest-bg-1 :foreground ,gruber-darkest-bg+4))))
    `(tab-bar-tab ((t (:background nil :foreground ,gruber-darkest-yellow :weight bold))))
    `(tab-bar-tab-inactive ((t (:background nil))))
 
@@ -419,7 +417,7 @@
 
    ;; Corfu
    `(corfu-current ((t (:background ,gruber-darkest-bg+3 :foreground ,gruber-darkest-fg+1))))
-   `(corfu-border ((t (:background ,gruber-darkest-bg+1))))
+   `(corfu-border ((t (:background ,gruber-darkest-bg-1))))
    `(corfu-default ((t (:background ,gruber-darkest-bg :foreground ,gruber-darkest-fg))))
    `(corfu-annotation ((t (:foreground ,gruber-darkest-quartz))))
 
