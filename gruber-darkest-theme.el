@@ -6,7 +6,7 @@
 
 ;; Author: ptrfs 
 ;; URL: http://github.com/ptrfs/gruber-darkest-theme
-;; Version: 0.1
+;; Version: 0.1.2
 
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
@@ -387,8 +387,8 @@
 
    ;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg))))
-   `(company-tooltip-annotation ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg))))
-   `(company-tooltip-annotation-selection ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg+3))))
+   `(company-tooltip-annotation ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg :bold t))))
+   `(company-tooltip-annotation-selection ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg+3 :bold t))))
    `(company-tooltip-selection ((t (:foreground ,gruber-darkest-fg :background ,gruber-darkest-bg+3))))
    `(company-tooltip-mouse ((t (:background ,gruber-darkest-bg))))
    `(company-tooltip-common ((t (:foreground ,gruber-darkest-bg+3 :background ,gruber-darkest-bg))))
