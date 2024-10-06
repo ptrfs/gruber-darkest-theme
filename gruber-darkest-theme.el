@@ -6,7 +6,7 @@
 
 ;; Author: ptrfs 
 ;; URL: http://github.com/ptrfs/gruber-darkest-theme
-;; Version: 0.1.2
+;; Version: 0.1.3
 
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
@@ -49,10 +49,8 @@
       (gruber-darkest-bg        "#181818")
       (gruber-darkest-bg+3      "#484848")
       (gruber-darkest-bg+4      "#52494e")
-      (gruber-darkest-red-1     "#c73c3f")
-      (gruber-darkest-red       "#f43841")
-      (gruber-darkest-red+1     "#ff4f58")
-      (gruber-darkest-green     "#4C5454")
+      (gruber-darkest-red       "#5e2424")
+      (gruber-darkest-green     "#4F6960")
       (gruber-darkest-yellow    "#c9bb8e")
       (gruber-darkest-brown     "#8B8589")
       (gruber-darkest-quartz    "#95a99f")
@@ -118,7 +116,7 @@
    `(compilation-warning ((t ,(list :foreground gruber-darkest-brown
                                     :bold t
                                     :inherit 'unspecified))))
-   `(compilation-error ((t (:foreground ,gruber-darkest-red+1))))
+   `(compilation-error ((t (:foreground ,gruber-darkest-red))))
    `(compilation-mode-line-fail ((t ,(list :foreground gruber-darkest-red
                                            :weight 'bold
                                            :inherit 'unspecified))))
@@ -133,7 +131,7 @@
    `(custom-state ((t (:foreground ,gruber-darkest-green))))
 
    ;; Diff
-   `(diff-removed ((t ,(list :foreground gruber-darkest-red+1
+   `(diff-removed ((t ,(list :foreground gruber-darkest-red
                              :background nil))))
    `(diff-added ((t ,(list :foreground gruber-darkest-green
                            :background nil))))
@@ -164,8 +162,8 @@
    ;; ERC
    `(erc-notice-face ((t (:foreground ,gruber-darkest-wisteria))))
    `(erc-timestamp-face ((t (:foreground ,gruber-darkest-green))))
-   `(erc-input-face ((t (:foreground ,gruber-darkest-red+1))))
-   `(erc-my-nick-face ((t (:foreground ,gruber-darkest-red+1))))
+   `(erc-input-face ((t (:foreground ,gruber-darkest-red))))
+   `(erc-my-nick-face ((t (:foreground ,gruber-darkest-red))))
 
    ;; EShell
    `(eshell-ls-backup ((t (:foreground ,gruber-darkest-quartz))))
@@ -277,7 +275,7 @@
    `(magit-branch ((t (:foreground ,gruber-darkest-niagara))))
    `(magit-diff-hunk-header ((t (:background ,gruber-darkest-bg-1))))
    `(magit-diff-file-header ((t (:background ,gruber-darkest-bg+4))))
-   `(magit-log-sha1 ((t (:foreground ,gruber-darkest-red+1))))
+   `(magit-log-sha1 ((t (:foreground ,gruber-darkest-red))))
    `(magit-log-author ((t (:foreground ,gruber-darkest-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-darkest-green
                                             :background gruber-darkest-bg-1))))
@@ -312,7 +310,7 @@
    `(org-column ((t (:background ,gruber-darkest-bg-1))))
    `(org-column-title ((t (:background ,gruber-darkest-bg-1 :underline t :weight bold))))
    `(org-done ((t (:foreground ,gruber-darkest-green))))
-   `(org-todo ((t (:foreground ,gruber-darkest-red-1))))
+   `(org-todo ((t (:foreground ,gruber-darkest-red))))
    `(org-upcoming-deadline ((t (:foreground ,gruber-darkest-yellow))))
 
    ;; Search
@@ -325,11 +323,11 @@
                                        :background gruber-darkest-niagara-1))))
 
    ;; Sh
-   `(sh-quoted-exec ((t (:foreground ,gruber-darkest-red+1))))
+   `(sh-quoted-exec ((t (:foreground ,gruber-darkest-red))))
 
    ;; Show Paren
    `(show-paren-match-face ((t (:background ,gruber-darkest-bg+4))))
-   `(show-paren-mismatch-face ((t (:background ,gruber-darkest-red-1))))
+   `(show-paren-mismatch-face ((t (:background ,gruber-darkest-red))))
 
    ;; Slime
    `(slime-repl-inputed-output-face ((t (:foreground ,gruber-darkest-red))))
@@ -356,7 +354,7 @@
    `(whitespace-hspace ((t ,(list :background gruber-darkest-bg
                                   :foreground gruber-darkest-bg-1))))
    `(whitespace-line ((t ,(list :background gruber-darkest-bg-1
-                                :foreground gruber-darkest-red+1))))
+                                :foreground gruber-darkest-red))))
    `(whitespace-newline ((t ,(list :background gruber-darkest-bg
                                    :foreground gruber-darkest-bg-1))))
    `(whitespace-trailing ((t ,(list :background gruber-darkest-red
@@ -377,7 +375,7 @@
 
    ;; vterm / ansi-term
    `(term-color-black ((t (:foreground ,gruber-darkest-bg+3 :background ,gruber-darkest-bg+4))))
-   `(term-color-red ((t (:foreground ,gruber-darkest-red-1 :background ,gruber-darkest-red-1))))
+   `(term-color-red ((t (:foreground ,gruber-darkest-red :background ,gruber-darkest-red))))
    `(term-color-green ((t (:foreground ,gruber-darkest-green :background ,gruber-darkest-green))))
    `(term-color-blue ((t (:foreground ,gruber-darkest-niagara :background ,gruber-darkest-niagara))))
    `(term-color-yellow ((t (:foreground ,gruber-darkest-yellow :background ,gruber-darkest-yellow))))
